@@ -1,7 +1,5 @@
 name "java"
 description "Install Oracle Java on Ubuntu"
-# Chef::Log.info "in roles file value of app_dir = #{app_dir}"
-Chef::Log.info "in roles file value of app_dir *********"
 override_attributes(
   "java" => {
      "install_flavor" => "oracle",
@@ -14,8 +12,5 @@ override_attributes(
        }
      }
   }
-)
-run_list(
-  "recipe[java]"
 )
 
